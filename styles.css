@@ -1,0 +1,112 @@
+:root {
+    --bg-color-light: #F5F5F5;
+    --bg-color: rgb(61, 61, 61);
+    --primary: #C0392B;
+    --secondary: #000000;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+		color: var(--white);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav .logo {
+  color: var(--white);
+  font-size: 2rem;
+	font-weight: bold;;
+}
+
+.nav .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav .nav-item {
+  margin-left: 20px;
+}
+
+.nav .nav-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav .nav-link:hover {
+  /* TODO: insert hover effect */
+}
+
+.contact-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 1px;
+}
+
+section {
+  text-align: center;
+	margin-top: 1rem;
+}
+
+section .section-heading {
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.home-section_intro {
+	font-size: 1.25rem;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.menu-content_subheading {
+	margin-bottom: 1rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 1.6rem;
+}
+
+.footer {
+  background-color: var(--secondary);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .nav .nav-list {
+    margin-top: 10px;
+  }
+  
+  .nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  section {
+    padding: 10px 5px;
+  }
+}

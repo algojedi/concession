@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diner on Concession</title>
+    <link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">Diner on Concession</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="contact-line">
+      <div>PH: 905-555-5555</div>
+      <div>Concession St, Hamilton, ON</div>
+    </section>
+
+    <section class="home-section" id="home">
+      <h1>Welcome to Diner on Concession</h1>
+      <div class="home-section_intro"> A cozy, inviting spot where comfort food meets modern flavors. Nestled in the heart of Concession, we take pride in serving hearty, homemade meals with fresh ingredients and a touch of nostalgia. Whether you're here for a classic breakfast, a satisfying lunch, or a delicious dinner, our warm atmosphere and friendly service will make you feel right at home. Come in, grab a seat, and enjoy a meal made with care.</div>
+    </section>
+
+    <section id="menu">
+      <h1>Our Menu</h1>
+      <div class="menu-content">
+        <div class="menu-content_subheading">Breakfast</div>
+        <div class="menu-content_subheading">Lunch</div>
+        <div class="menu-content_subheading">Dinner</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About Us</h1>
+      <p>A diner that feels like home.</p>
+    </section>
+
+    <section id="gallery">
+      <h1>Gallery</h1>
+      <p>Photos of our cozy diner and tasty dishes.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Contact</h1>
+      <p>Come visit or contact us for reservations.</p>
+      <!-- add google map to 4 duet in brampton, ON -->
+
+      <div class="contact-form">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.498666585119!2d-79.85688162746999!3d43.24096970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9bbf659ac77f%3A0x3ed419d9fdf2bc72!2sConcession%20St%2C%20Hamilton%2C%20ON%20L8V%201A9!5e0!3m2!1sen!2sca!4v1741921723798!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Diner on Concession</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
