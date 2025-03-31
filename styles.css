@@ -4,6 +4,7 @@
     --primary: #C0392B;
     --secondary: #000000;
     --white: #FFFFFF;
+    --subheading-bg: red;
 }
 
 * {
@@ -77,18 +78,20 @@ section .section-heading {
 }
 
 .menu-content_subheading {
-	margin-bottom: 1rem;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 	font-size: 1.6rem;
+  margin-top: 1rem;
+	margin-bottom: .5rem;
+  background-color: var(--subheading-bg);
 }
 
 .footer {
-  background-color: var(--secondary);
-  color: var(--white);
   text-align: center;
   padding: 10px;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 @media (max-width: 768px) {
