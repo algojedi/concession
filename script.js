@@ -11,7 +11,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetchMenu();
+  // fetchMenu();
 });
 
 function fetchMenu() {
