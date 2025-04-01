@@ -77,7 +77,11 @@ section .section-heading {
   margin: 0 auto;
 }
 
-.menu-content_subheading {
+.menu-content {
+  padding: 2rem;
+}
+
+.menu-content_category {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
   font-style: normal;
@@ -87,9 +91,13 @@ section .section-heading {
   background-color: var(--subheading-bg);
 }
 
+.menu-content_subcategory {
+  
+}
+
 .menu-content_items {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .menu-content_items-item {
@@ -97,6 +105,7 @@ section .section-heading {
   justify-content: space-between;
   width: 100%;
   max-width: 500px;
+  margin: .5rem;
 }
 .menu-content_items-item_name {
 }
