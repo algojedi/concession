@@ -77,6 +77,13 @@ section .section-heading {
   margin: 0 auto;
 }
 
+#menu {
+  /* font-family: "Bungee", "Georgia", sans-serif, cursive; */
+  font-family: "Georgia", sans-serif, cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .menu-content {
   /* padding: 2rem; */
 }
@@ -109,6 +116,7 @@ section .section-heading {
   width: 90%;
   margin: 0 auto;
 }
+
 .menu-content_items-item {
   display: flex;
   justify-content: space-between;
@@ -116,6 +124,27 @@ section .section-heading {
   max-width: 400px;
   margin: .25rem;
   padding: 0 1rem;
+}
+
+.menu-content_items-item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.menu-content_items-item_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.menu-content_items-item_description {
+  color: lightgray;
+  text-align: left;
+}
+.menu-content_items-item_price {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
