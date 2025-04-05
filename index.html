@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="nav">
@@ -268,27 +272,41 @@
       <p>Come visit or contact us for reservations.</p>
       <!-- add google map to 4 duet in brampton, ON -->
 
-      <div class="google-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.498666585119!2d-79.85688162746999!3d43.24096970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9bbf659ac77f%3A0x3ed419d9fdf2bc72!2sConcession%20St%2C%20Hamilton%2C%20ON%20L8V%201A9!5e0!3m2!1sen!2sca!4v1741921723798!5m2!1sen!2sca"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div class="contact-form">
-        <form action="submit.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <div class="contact_details">
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.498666585119!2d-79.85688162746999!3d43.24096970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9bbf659ac77f%3A0x3ed419d9fdf2bc72!2sConcession%20St%2C%20Hamilton%2C%20ON%20L8V%201A9!5e0!3m2!1sen!2sca!4v1741921723798!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact_details_links">
+          <div class="contact_details_links-hours">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 7:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+          </div>
+          <div class="contact_details_links-instagram">
+            <a
+              href="https://www.instagram.com/gordongram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram"></i> Follow us on Instagram!
+            </a>
+          </div>
+          <div class="contact_details_links-email">
+            <a
+              href="mailto:test@test.com?subject=RE:Diner%20on%20Concession&body=I%20wanted%20to%20reach%20out%20about..."
+            >
+              <i class="fas fa-envelope"></i> Email questions or concerns
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 

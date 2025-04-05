@@ -5,6 +5,7 @@
   --secondary: #000000;
   --white: #ffffff;
   --subheading-bg: red;
+  --instagram-color: #e1306c;
 }
 
 * {
@@ -13,11 +14,40 @@
   box-sizing: border-box;
 }
 
+/* Base font size */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* When screen is smaller than 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* 1rem = 14px */
+  }
+}
+
+/* You can go smaller if needed */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--white);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -65,9 +95,10 @@ section {
   margin-top: 1rem;
 }
 
-section .section-heading {
-  color: var(--secondary);
+section > h1 {
+  color: var(--bg-color-light);
   margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .home-section_intro {
@@ -79,7 +110,7 @@ section .section-heading {
 
 #menu {
   /* font-family: "Bungee", "Georgia", sans-serif, cursive; */
-  font-family: "Georgia", sans-serif, cursive;
+  font-family: 'Georgia', sans-serif, cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -100,7 +131,6 @@ section .section-heading {
 
 .menu-content_subcategory {
   margin-top: 1rem;
-  
 }
 
 .menu-content_subcategory-note {
@@ -123,14 +153,13 @@ section .section-heading {
   justify-content: space-between;
   width: 100%;
   max-width: 400px;
-  margin: .25rem;
+  margin: 0.25rem;
   padding: 0 1rem;
 }
 
 .menu-content_items-item_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   width: 100%;
 }
@@ -155,7 +184,6 @@ section .section-heading {
   .menu-content_items-item {
     max-width: 100%;
   }
-  
 }
 
 @media screen and (max-width: 660px) {
@@ -166,7 +194,6 @@ section .section-heading {
     max-width: 100%;
   }
 }
-
 
 .menu-content_items-item_name {
 }
@@ -191,7 +218,6 @@ section .section-heading {
   border: 0;
 }
 
-
 .footer {
   text-align: center;
   padding: 10px;
@@ -214,7 +240,34 @@ section .section-heading {
     margin-right: 10px;
   }
 
-  /* section {
-    padding: 10px 5px;
-  } */
+  .contact_details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_details_links {
+    font-size: 1.2rem !important;
+  }
+}
+
+.contact_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact_details_links {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact_details_links-email {
+  margin-bottom: 1rem;
+}
+.contact_details_links-instagram {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  /* use instagram color for the font color */
+  color: var(--instagram-color);
 }
