@@ -131,6 +131,9 @@ section > h1 {
 
 .menu-content_subcategory {
   margin-top: 1rem;
+  color: var(--primary);
+  text-transform: uppercase;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .menu-content_subcategory-note {
@@ -146,6 +149,7 @@ section > h1 {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  margin-top: 1rem;;
 }
 
 .menu-content_items-item {
@@ -167,6 +171,7 @@ section > h1 {
 .menu-content_items-item_name {
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: left;
 }
 .menu-content_items-item_description {
   color: lightgray;
@@ -175,24 +180,6 @@ section > h1 {
 .menu-content_items-item_price {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-@media screen and (max-width: 1000px) {
-  .menu-content_items {
-    width: 60%;
-  }
-  .menu-content_items-item {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .menu-content_items {
-    width: 85%;
-  }
-  .menu-content_items-item {
-    max-width: 100%;
-  }
 }
 
 .menu-content_items-item_name {
@@ -265,9 +252,29 @@ section > h1 {
 .contact_details_links-email {
   margin-bottom: 1rem;
 }
+
 .contact_details_links-instagram {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
-  /* use instagram color for the font color */
   color: var(--instagram-color);
+}
+
+/* ------ MEDIA QUERIES --------*/
+
+@media screen and (max-width: 1000px) {
+  .menu-content_items {
+    width: 60%;
+  }
+  .menu-content_items-item {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .menu-content_items {
+    width: 85%;
+  }
+  .menu-content_items-item {
+    max-width: 100%;
+  }
 }
