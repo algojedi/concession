@@ -6,6 +6,8 @@
   --white: #ffffff;
   --subheading-bg: red;
   --instagram-color: #e1306c;
+  /* add a variable for light grey */
+  --light-grey: #d3d3d3;
 }
 
 * {
@@ -84,10 +86,13 @@ p {
   /* TODO: insert hover effect */
 }
 
-.contact-line {
+.phone {
   display: flex;
   justify-content: space-around;
   padding: 1px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--light-grey)
 }
 
 section {
@@ -97,13 +102,13 @@ section {
 
 section > h1 {
   color: var(--bg-color-light);
-  margin-bottom: 20px;
+  margin: 1.5rem 0;
   font-weight: 800;
 }
 
 .home-section_intro {
   font-size: 1.25rem;
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
 }
@@ -113,10 +118,14 @@ section > h1 {
   font-family: 'Georgia', sans-serif, cursive;
   font-weight: 400;
   font-style: normal;
+  opacity: 0;
+  transform: translateX(-50px); /* Slide in from left */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.menu-content {
-  /* padding: 2rem; */
+#menu.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .menu-content_category {
@@ -174,7 +183,7 @@ section > h1 {
   text-align: left;
 }
 .menu-content_items-item_description {
-  color: lightgray;
+  color: var(--light-grey);
   text-align: left;
 }
 .menu-content_items-item_price {
@@ -210,6 +219,7 @@ section > h1 {
   padding: 10px;
   background-color: var(--secondary);
   color: var(--white);
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

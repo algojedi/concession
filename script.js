@@ -10,9 +10,30 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  // fetchMenu();
-});
+  document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("menu");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // only trigger once
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (menu) {
+      observer.observe(menu);
+    }
+  });
+
+
+
+
+
 
 function fetchMenu() {
   fetch(MENU_JSON)
