@@ -22,7 +22,9 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="logo">DINER ON CONCESSION</div>
+      <div class="logo">
+        DINER <span class="logo-text-secondary">on Concession</span>
+      </div>
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
@@ -35,12 +37,18 @@
         </li>
       </ul>
     </nav>
-    <section class="phone">
-    905-575-4409
-    </section>
 
     <section class="home-section" id="home">
-      <h1>Welcome to Diner on Concession</h1>
+      <!-- wrap the phone number in a div along with a phone icon -->
+      <!-- <div class="phone">905-575-4409</div> -->
+      <div class="home-section_phone">
+        <div>
+          <i class="fas fa-phone"></i>
+        </div>
+        <div>905-575-4409</div>
+      </div>
+
+      <h2 class="home-section_heading">Welcome to Diner on Concession</h2>
       <div class="home-section_intro">
         A cozy, inviting spot where comfort food meets modern flavors. We take
         pride in serving hearty, homemade meals with fresh ingredients and a
